@@ -1,0 +1,25 @@
+{
+  "name": "log-viewer",
+  "displayName": "Log Viewer",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "log",
+      "aliases": ["Log File", "log"],
+      "extensions": [".log"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "log",
+      "scopeName": "source.log",
+      "path": "./syntaxes/log.tmLanguage.json"
+    }]
+  }
+}

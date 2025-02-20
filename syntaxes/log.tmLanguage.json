@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Log File",
+	"patterns": [
+		{
+			"name": "constant.numeric.timestamp.log",
+			"match": "\\b\\d{8}-\\d{6},\\d{3}\\b"
+		},
+		{
+			"name": "keyword.level.log",
+			"match": "<(INFO|DEBUG|ERROR|WARN)>"
+		},
+		{
+			"name": "constant.numeric.processid.log",
+			"match": ":\\d+"
+		},
+		{
+			"name": "entity.name.section.module.log",
+			"match": "\\[\\w+(_\\w+)*\\]"
+		},
+		{
+			"name": "entity.name.function.log",
+			"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\(.*?\\)"
+		},
+		{
+			"name": "constant.numeric.line.log",
+			"match": "\\bline \\d+\\b"
+		},
+		{
+			"name": "string.unquoted.path.log",
+			"match": "(?:[A-Za-z]:)?[\\\\/][^\\s:\\[\\]]+"
+		},
+		{
+			"name": "meta.brackets.path.log",
+			"begin": "\\[",
+			"end": "\\]",
+			"patterns": [
+				{
+					"name": "string.unquoted.path.insidebrackets.log",
+					"match": "(?:[A-Za-z]:)?[\\\\/][^\\s:\\[\\]]+"
+				}
+			]
+		},
+		{
+			"name": "string.unquoted.message.log",
+			"match": "(?<=:\\s).*"
+		},
+		{
+			"name": "constant.numeric.costtime.log",
+			"match": "\\b\\d+(\\.\\d+)?ms\\b"
+		}
+	],
+	"scopeName": "source.log"
+}
