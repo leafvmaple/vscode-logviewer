@@ -1,0 +1,14 @@
+20250219-160954,472<ERROR:29372>: [KGUI] KGUI lua call failed [(null)]
+stack traceback:
+	[C]: in function 'SetPercentage'
+	\ui\Config\Default\Homeland\HouseKeeper.lua: in function 'UpdateHouseKeeperLove'
+	\ui\Config\Default\Homeland\HouseKeeper.lua: in function 'Update'
+	\ui\Config\Default\Homeland\HouseKeeper.lua: in function 'Open'
+	\ui\Script\RemoteCommand.lua: in function '?'
+	\ui\Script\RemoteCommand.lua: in function <\ui\Script\RemoteCommand.lua:3>
+20250219-160954,483<ERROR:29372>: [KGUI] _LUA_DUMP_ [@\ui\Config\Default\Homeland\HouseKeeper.lua: 403, 426, 45]
+20250219-160954,485<ERROR:29372>: [KGUI] _LUA_DUMP_ [@\ui\Config\Default\Homeland\HouseKeeper.lua: 448, 483, 66]
+20250219-160954,486<ERROR:29372>: [KGUI] _LUA_DUMP_ [@\ui\Config\Default\Homeland\HouseKeeper.lua: 796, 811, 29]
+20250219-160954,491<ERROR:29372>: [KGUI] _LUA_DUMP_ [@\ui\Script\RemoteCommand.lua: 4176, 4178, 3]
+20250219-160954,493<ERROR:29372>: [KGUI] _LUA_DUMP_ [@\ui\Script\RemoteCommand.lua: 3, 7, 7]
+20250219-160954,494<DEBUG:29372>: [KGUI] KGUI lua call failed [(null)]
